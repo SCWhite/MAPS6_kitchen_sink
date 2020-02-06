@@ -22,7 +22,8 @@ try:
     print("========================")
 
     print("open port & init mcu")
-    mcu.ser=serial.Serial("COM57",115200,timeout=1)
+    #mcu.ser=serial.Serial("COM57",115200,timeout=1)
+    mcu.ser=serial.Serial("ttyAMA0",115200,timeout=1) #for PI
     time.sleep(5)
     print("mcu ok\n")
     print("------------------------")
@@ -36,7 +37,7 @@ try:
     #TODO
     current_mcu_time = mcu.GET_RTC_DATE_TIME()
     print(current_mcu_time)
-    #get PI time 
+    #get PI time
     #and sync time
 
 
@@ -53,7 +54,7 @@ try:
         print("please update mcu")
     else:
         print("newest version")
-        
+
     print("------------------------")
     print("SET SENSOR")
 
