@@ -5,8 +5,8 @@ from datetime import datetime
 
 def GET_STORAGE_PATH():
 
-    if len(os.listdir("./media/pi")):
-        path = "./media/pi/" + os.listdir("./media/pi")[0]
+    if len(os.listdir("/media/pi")):
+        path = "/media/pi/" + os.listdir("/media/pi")[0]
 
         return path
 

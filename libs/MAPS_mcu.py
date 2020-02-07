@@ -1,3 +1,4 @@
+# -*- coding: UTF-8 -*-
 
 #debug switch-- 1:on / 0:off
 debug = 0
