@@ -14,7 +14,7 @@ latest_mcu_version = 980
 
 
 #path
-FS_SD = "/home/pi/MAPS6.0/data"
+FS_SD = "./data"
 
 
 #Enable 1:on / 0:off

@@ -23,7 +23,7 @@ try:
 
     print("open port & init mcu")
     #mcu.ser=serial.Serial("COM57",115200,timeout=1)
-    mcu.ser=serial.Serial("/dev/ttyUSB0",115200,timeout=1) #for PI (not ttyAMA0)
+    mcu.ser=serial.Serial("/dev/ttyS0",115200,timeout=1) #for PI (not ttyAMA0)(use /dev/ttyS0)
     time.sleep(5)
     print("mcu ok\n")
     print("------------------------")
